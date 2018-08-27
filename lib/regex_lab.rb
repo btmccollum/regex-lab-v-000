@@ -1,8 +1,14 @@
 require 'pry'
 
 def starts_with_a_vowel?(word) #returns true if the word begins with a vowel
-  binding.pry
-  !!(word.match(/\b[aeiou]/i))
+  # binding.pry
+  if word.match(/\A[aeiouAEIOU]/)
+    return true
+  else
+    false
+  end
+  
+  # !!(word.match(/\b[aeiou]/i))
 end
 
 def words_starting_with_un_and_ending_with_ing(text) #creates an array of all words starting with 'un' and ending with 'ing'
