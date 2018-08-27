@@ -7,7 +7,7 @@ def starts_with_a_vowel?(word) #returns true if the word begins with a vowel
   else
     false
   end
-  
+
   # !!(word.match(/\b[aeiou]/i))
 end
 
